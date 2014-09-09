@@ -1,11 +1,11 @@
 /* global describe, it, expect */
 
-var pkg = require('..');
+var common = require('..');
 
 describe('mock-common', function() {
   
-  it('should export object', function() {
-    expect(pkg).to.be.an('object');
+  it('should export constructors', function() {
+    expect(common.Logger).to.be.a('function');
   });
   
 });
